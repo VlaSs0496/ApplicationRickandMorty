@@ -1,0 +1,38 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Episode</ion-title>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="character"></ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-grid>
+    <ion-row>
+      <ion-col sizeMd="4" offsetMd="4">
+        <div *ngIf="episode">
+          <ion-card>
+            <ion-card-content class="ion-text-center">
+              <img src="https://c.tenor.com/3hIpHNbcVf4AAAAC/rick-and-morty-rick.gif">
+              <ion-card-title>
+                Name: {{episode.name}}
+              </ion-card-title>
+              <p>Episode: {{episode.episode}}</p>
+              <p>ID: {{episode.id}}</p>
+              <p>Characters: {{episode.characters[0]}}</p>
+              <p>Characters: {{episode.characters[1]}}</p>
+              <p>Characters: {{episode.characters[2]}}</p>
+              <p>Characters: {{episode.characters[3]}}</p>
+              <p>Characters: {{episode.characters[4]}}</p>
+              <p>Characters: {{episode.characters[5]}}</p>
+              <ion-list>
+              </ion-list>
+            </ion-card-content>
+          </ion-card>
+        </div>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+</ion-content>
